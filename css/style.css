@@ -256,6 +256,7 @@ ul.hide-mobile {
   aspect-ratio: 1;
   border-radius: 50%;
   cursor: pointer;
+  user-select: none;
 }
 
 .landing .skills img {
