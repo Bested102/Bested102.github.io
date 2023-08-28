@@ -17,7 +17,6 @@
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap"
     rel="stylesheet">
   <title>Omar | Front-end Developer</title>
-  <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -105,28 +104,6 @@
         <div class="content">
           <Product v-for="(p , i) in projectData" :title="p.title" :tech="p.techs" :imgsrc="p.imgSrc"
             :content="p.description" :index="i" :code="p.code" :site="p.site"/>
-          <!--
-          <div class="project">
-            <div class="info hidden-left">
-              <h2>Todo App</h2>
-              <p>
-                A challange by Front-end mentor.
-                This todo app lets you make tasks, delete them and mark them as completed.It also utilizes local
-                storage.
-              </p>
-              <div class="techs">
-                <span>JS</span>
-                <span>CSS</span>
-              </div>
-              <div class="links">
-                <a target="_blank" href="https://github.com/Bested102/Todo-App" class="code">Code <i
-                    class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://bested102.github.io/Todo-App/" class="live">Preview page <i
-                    class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <img src="images/Frontend-Mentor-Todo-app-fotor-2023071315750.png" class="hidden-right">
-          </div> -->
         </div>
       </div>
     </section>
@@ -221,6 +198,8 @@
 
     app.mount('#app')
   </script>
+  
+  <script src="main.js"></script>
 </body>
 
 </html>
