@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Dashboard Page",
+    "techs": ["CSS"],
+    "description": "Temeplate by Elzero. Dashboard page with lots of widgets and multiple pages.",
+    "imgSrc":"images/Dashboard (1).png",
+    "code": "https://github.com/Bested102/Elzero-template-4",
+    "site": "https://bested102.github.io/Elzero-template-4/"
+  },
+  {
+    "title": "Elzero World",
+    "techs": ["CSS"],
+    "description": "Temeplate by Elzero. a Long landing page full of hover animations and effects.",
+    "imgSrc":"images/index-html-fotor-2023071321147.png",
+    "code": "https://github.com/Bested102/Elzero-template-3",
+    "site": "https://bested102.github.io/Elzero-template-3/"
+  },
+  {
+    "title": "E-commerce product page",
+    "techs": ["CSS" , "JS"],
+    "description": "A challange by Front-end mentor. An E-commerce sneaker page with a light box to view images.",
+    "imgSrc":"images/Frontend-Mentor-E-commerce-product-page-fotor-202307132312.png",
+    "code": "https://github.com/Bested102/E-commerce-product",
+    "site": "https://bested102.github.io/E-commerce-product/"
+  },
+  {
+    "title": "Todo App",
+    "techs": ["CSS" , "JS"],
+    "description": "A challange by Front-end mentor. This todo app lets you make tasks, delete them and mark them as completed.It also utilizes local storage.",
+    "imgSrc":"images/Frontend-Mentor-Todo-app-fotor-2023071315750.png",
+    "code": "https://github.com/Bested102/Todo-App",
+    "site": "https://bested102.github.io/Todo-App/"
+  }
+]
