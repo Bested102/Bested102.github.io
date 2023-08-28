@@ -149,7 +149,7 @@
           projectData: []
         }
       },
-      async mounted() {
+      async created() {
         let req = await fetch('projects.json')
         let res = await req.json()
         this.projectData = res
@@ -186,7 +186,7 @@
       },
       props: ['imgsrc', 'code', 'site', 'title', 'content', 'tech', 'index'],
       
-      beforeMount() {
+      created() {
         if (this.index % 2 == 0){
           console.log(this.index)
           this.directionClass = "info hidden-right"
