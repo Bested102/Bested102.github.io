@@ -1,20 +1,20 @@
 // Animate on scroll
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
-
 setTimeout(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
   const hiddenElements = document.querySelectorAll(
     ".hidden-left, .hidden-right , .hidden-up "
   );
 
   hiddenElements.forEach((el) => observer.observe(el));
-}, 75);
+}, 250);
 
 // Dynamic copright
 

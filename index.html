@@ -153,7 +153,6 @@
         let req = await fetch('projects.json')
         let res = await req.json()
         this.projectData = res
-        console.log(this.projectData)
       }
     })
 
@@ -198,7 +197,7 @@
 
     app.mount('#app')
   </script>
-  
+
   <script src="main.js"></script>
 </body>
 
