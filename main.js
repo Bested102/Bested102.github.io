@@ -14,7 +14,7 @@ setTimeout(() => {
   );
 
   hiddenElements.forEach((el) => observer.observe(el));
-}, 250);
+}, 300);
 
 // Dynamic copright
 

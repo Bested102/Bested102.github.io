@@ -377,6 +377,12 @@ ul.hide-mobile {
   margin-block: 3px 15px;
 }
 
+.project .techs{
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
 .project .techs span {
   padding: 4px 12px;
   border-radius: 6px;
