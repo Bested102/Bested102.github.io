@@ -1,14 +1,14 @@
 // Animate on scroll
 
-setTimeout(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
   });
+});
 
+setInterval(() => {
   const hiddenElements = document.querySelectorAll(
     ".hidden-left, .hidden-right , .hidden-up "
   );
@@ -97,7 +97,7 @@ function changeColors(theme) {
 let nav = document.querySelector("header .nav");
 let menuIcon = document.querySelector("header svg");
 let closeMenu = document.querySelector(".nav svg");
-let menuItem = document.querySelectorAll(".nav li")
+let menuItem = document.querySelectorAll(".nav li");
 
 function myFunction(x) {
   if (x.matches) {
@@ -109,18 +109,21 @@ function myFunction(x) {
     };
     closeMenu.onclick = () => {
       nav.classList.remove("show-mobile");
-      nav.classList.add("hide-mobile")
-    };
-    menuItem.forEach(e => e.onclick = ()=>{
-      nav.classList.remove("show-mobile");
       nav.classList.add("hide-mobile");
-    })
+    };
+    menuItem.forEach(
+      (e) =>
+        (e.onclick = () => {
+          nav.classList.remove("show-mobile");
+          nav.classList.add("hide-mobile");
+        })
+    );
   } else {
     document.querySelector("#theme-toggle").before(nav);
-      nav.classList.remove("show-mobile");
-      nav.classList.remove("hide-mobile");
+    nav.classList.remove("show-mobile");
+    nav.classList.remove("hide-mobile");
 
-    menuItem.forEach(e => e.onclick = ()=>{})
+    menuItem.forEach((e) => (e.onclick = () => {}));
   }
 }
 let x = window.matchMedia("(max-width: 767px)");
