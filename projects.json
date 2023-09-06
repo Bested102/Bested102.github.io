@@ -1,6 +1,6 @@
 [
   {
-    "title": "Dashboard Page",
+    "title": "Comments section",
     "techs": ["Vue", "CSS"],
     "description": "A challange by Front-end mentor. Interactive comments section that utilizes local storage.",
     "imgSrc": "images/download-fotor-20230905202118.jpg",
