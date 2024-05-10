@@ -378,7 +378,7 @@ ul.hide-mobile {
   margin-block: 3px 15px;
 }
 
-.project .techs{
+.project .techs {
   display: flex;
   gap: 6px;
   justify-content: center;
@@ -421,8 +421,7 @@ ul.hide-mobile {
 
 @media (min-width:1200px) {
 
-  .projects .container,
-  .contact .container {
+  .projects .container {
     width: 1000px;
   }
 }
@@ -527,6 +526,12 @@ ul.hide-mobile {
   color: var(--AccentColor);
   font-size: 15px;
   opacity: .8;
+}
+
+@media (min-width:1200px) {
+  .contact .container {
+    width: 1000px;
+  }
 }
 
 @media (max-width:560px) {
