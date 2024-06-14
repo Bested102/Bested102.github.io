@@ -10,7 +10,7 @@
   {
     "title": "Comments section",
     "techs": ["Vue", "CSS"],
-    "description": "A challange by Front-end mentor. Interactive comments section that utilizes local storage.",
+    "description": "A challenge by Front-end mentor. Interactive comments section that utilizes local storage.",
     "imgSrc": "images/download-fotor-20230905202118.jpg",
     "code": "https://github.com/Bested102/comment-section-vue",
     "site": "https://bested102.github.io/comment-section-vue/"
@@ -34,7 +34,7 @@
   {
     "title": "E-commerce product page",
     "techs": ["CSS" , "JS"],
-    "description": "A challange by Front-end mentor. An E-commerce sneaker page with a light box to view images.",
+    "description": "A challenge by Front-end mentor. An E-commerce sneaker page with a light box to view images.",
     "imgSrc":"images/Frontend-Mentor-E-commerce-product-page-fotor-202307132312.png",
     "code": "https://github.com/Bested102/E-commerce-product",
     "site": "https://bested102.github.io/E-commerce-product/"
@@ -42,7 +42,7 @@
   {
     "title": "Todo App",
     "techs": ["CSS" , "JS"],
-    "description": "A challange by Front-end mentor. This todo app lets you make tasks, delete them and mark them as completed.It also utilizes local storage.",
+    "description": "A challenge by Front-end mentor. This todo app lets you make tasks, delete them and mark them as completed.It also utilizes local storage.",
     "imgSrc":"images/Frontend-Mentor-Todo-app-fotor-2023071315750.png",
     "code": "https://github.com/Bested102/Todo-App",
     "site": "https://bested102.github.io/Todo-App/"
