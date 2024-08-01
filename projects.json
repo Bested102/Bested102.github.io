@@ -1,8 +1,16 @@
 [
   {
+    "title": "Schmidt",
+    "techs": ["Vue", "CSS"],
+    "description": "A template copy from Untree. Multiple page portfolio website.",
+    "imgSrc": "images/schmidt-vue.jpg",
+    "code": "https://github.com/Bested102/schmidt-vue/",
+    "site": "https://bested102.github.io/schmidt-vue/"
+  },
+  {
     "title": "Furni",
     "techs": ["Vue", "CSS"],
-    "description": "A template copy from Untree. Multiple page e-commerce furniture site ",
+    "description": "A template copy from Untree. Multiple page e-commerce furniture site.",
     "imgSrc": "images/Furni-fotor-20231117202317.jpg",
     "code": "https://github.com/Bested102/furni-vue/",
     "site": "https://bested102.github.io/furni-vue/"
