@@ -40,19 +40,19 @@
     "site": "https://bested102.github.io/Elzero-template-3/"
   },
   {
+    "title": "Todo App",
+    "techs": ["React" , "CSS"],
+    "description": "A challenge by Front-end mentor. This todo app lets you make tasks, delete them and mark them as completed.It also utilizes local storage.",
+    "imgSrc":"images/Frontend-Mentor-Todo-app-fotor-2023071315750.png",
+    "code": "https://github.com/Bested102/react-todo/",
+    "site": "https://bested102.github.io/react-todo/"
+  },
+  {
     "title": "E-commerce product page",
-    "techs": ["CSS" , "JS"],
+    "techs": ["JS" , "CSS"],
     "description": "A challenge by Front-end mentor. An E-commerce sneaker page with a light box to view images.",
     "imgSrc":"images/Frontend-Mentor-E-commerce-product-page-fotor-202307132312.png",
     "code": "https://github.com/Bested102/E-commerce-product",
     "site": "https://bested102.github.io/E-commerce-product/"
-  },
-  {
-    "title": "Todo App",
-    "techs": ["CSS" , "JS"],
-    "description": "A challenge by Front-end mentor. This todo app lets you make tasks, delete them and mark them as completed.It also utilizes local storage.",
-    "imgSrc":"images/Frontend-Mentor-Todo-app-fotor-2023071315750.png",
-    "code": "https://github.com/Bested102/Todo-App",
-    "site": "https://bested102.github.io/Todo-App/"
   }
 ]
