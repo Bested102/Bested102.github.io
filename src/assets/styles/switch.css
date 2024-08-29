@@ -1,11 +1,11 @@
 @import "https://unpkg.com/open-props/easings.min.css";
 
-:root{
-  --icon-fill:var(--PrimaryColor);
-  --icon-fill-hover:var(--AccentColor);
+:root {
+  --icon-fill: var(--PrimaryColor);
+  --icon-fill-hover: var(--AccentColor);
 }
 
-.theme-toggle{
+.theme-toggle {
   background-color: transparent;
   cursor: pointer;
   padding: 0;

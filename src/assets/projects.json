@@ -1,9 +1,9 @@
 [
   {
     "title": "Schmidt",
-    "techs": ["Vue", "CSS"],
-    "description": "A template copy from Untree. Multiple page portfolio website.",
-    "imgSrc": "images/schmidt-vue.jpg",
+    "techs": ["Vue", "SCSS"],
+    "description": "A template copy from Colorlib. Multiple page portfolio website.",
+    "imgSrc": "/images/schmidt-vue.jpg",
     "code": "https://github.com/Bested102/schmidt-vue/",
     "site": "https://bested102.github.io/schmidt-vue/"
   },
@@ -11,7 +11,7 @@
     "title": "Furni",
     "techs": ["Vue", "CSS"],
     "description": "A template copy from Untree. Multiple page e-commerce furniture site.",
-    "imgSrc": "images/Furni-fotor-20231117202317.jpg",
+    "imgSrc": "/images/Furni.jpg",
     "code": "https://github.com/Bested102/furni-vue/",
     "site": "https://bested102.github.io/furni-vue/"
   },
@@ -19,7 +19,7 @@
     "title": "Comments section",
     "techs": ["Vue", "CSS"],
     "description": "A challenge by Front-end mentor. Interactive comments section that utilizes local storage.",
-    "imgSrc": "images/download-fotor-20230905202118.jpg",
+    "imgSrc": "/images/CommentSection.jpg",
     "code": "https://github.com/Bested102/comment-section-vue",
     "site": "https://bested102.github.io/comment-section-vue/"
   },
@@ -27,7 +27,7 @@
     "title": "Dashboard Page",
     "techs": ["CSS"],
     "description": "Temeplate by Elzero. Dashboard page with lots of widgets and multiple pages.",
-    "imgSrc":"images/Dashboard (1).png",
+    "imgSrc":"/images/Dashboard.png",
     "code": "https://github.com/Bested102/Elzero-template-4",
     "site": "https://bested102.github.io/Elzero-template-4/"
   },
@@ -35,7 +35,7 @@
     "title": "Elzero World",
     "techs": ["CSS"],
     "description": "Temeplate by Elzero. a Long landing page full of hover animations and effects.",
-    "imgSrc":"images/index-html-fotor-2023071321147.png",
+    "imgSrc":"/images/Elzero3.png",
     "code": "https://github.com/Bested102/Elzero-template-3",
     "site": "https://bested102.github.io/Elzero-template-3/"
   },
@@ -43,7 +43,7 @@
     "title": "Todo App",
     "techs": ["React" , "CSS"],
     "description": "A challenge by Front-end mentor. This todo app lets you make tasks, delete them and mark them as completed.It also utilizes local storage.",
-    "imgSrc":"images/Frontend-Mentor-Todo-app-fotor-2023071315750.png",
+    "imgSrc":"/images/TodoApp.png",
     "code": "https://github.com/Bested102/react-todo/",
     "site": "https://bested102.github.io/react-todo/"
   },
@@ -51,7 +51,7 @@
     "title": "E-commerce product page",
     "techs": ["JS" , "CSS"],
     "description": "A challenge by Front-end mentor. An E-commerce sneaker page with a light box to view images.",
-    "imgSrc":"images/Frontend-Mentor-E-commerce-product-page-fotor-202307132312.png",
+    "imgSrc":"/images/Ecommerce.png",
     "code": "https://github.com/Bested102/E-commerce-product",
     "site": "https://bested102.github.io/E-commerce-product/"
   }
