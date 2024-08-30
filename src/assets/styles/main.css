@@ -188,12 +188,12 @@ body:has(.nav.show-mobile) {
   gap: 90px;
 }
 
-.landing h1 {
+.landing h1 .wrapper{
   font-size: 65px;
   font-weight: bolder;
 }
 
-.landing p {
+.landing p .wrapper{
   font-size: 19px;
   margin-block: 10px;
 }
@@ -245,7 +245,7 @@ body:has(.nav.show-mobile) {
     text-align: center;
   }
 
-  .landing h1 {
+  .landing h1 .wrapper{
     font-size: 60px;
   }
 
