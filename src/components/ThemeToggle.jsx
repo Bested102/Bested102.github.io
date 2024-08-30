@@ -1,12 +1,14 @@
 import "../assets/styles/switch.css";
 import { useState, useEffect } from "react";
- 
+
 export default function ThemeToggle() {
+  const preferedTheme = window.matchMedia("(prefers-color-scheme: dark)")
+    .matches
+    ? "dark"
+    : "light";
+
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ||
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light"
+    localStorage.getItem("theme") || preferedTheme
   );
 
   window

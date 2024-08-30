@@ -29,6 +29,7 @@ export default function Contact() {
             </div>
           </div>
           <div
+          style={{transitionDelay:".3s"}}
             className="box hidden-left"
             onClick={()=> copyContent("bested.")}
             title="Copy to clipboard"

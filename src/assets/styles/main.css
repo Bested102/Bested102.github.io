@@ -5,8 +5,13 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+*:not(.hidden-left):not(.hidden-right):not(.hidden-up):not(#theme-toggle){
+  transition: background .35s, color .35s;
+}
+
 body {
   background-color: var(--MainBackground);
+  transition: none;
   color: var(--Text-Color);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -200,7 +205,7 @@ body:has(.nav.show-mobile) {
   align-items: center;
 }
 
-.landing .skills h2 {
+.landing .skills h2 .wrapper{
   color: var(--AccentColor);
   font-family: "Bebas Neue", sans-serif;
   border-right: 2px solid var(--AccentColor);
@@ -217,20 +222,20 @@ body:has(.nav.show-mobile) {
   gap: 20px;
 }
 
-.landing .skills li {
+.landing .skills li .wrapper{
   background-color: var(--SecondaryColor);
   display: grid;
   place-items: center;
   width: 60px;
-  aspect-ratio: 1;
+  height: 60px;
   border-radius: 50%;
   cursor: pointer;
   user-select: none;
 }
 
-.landing .skills img {
+.landing .skills li img {
   max-width: 34px;
-  aspect-ratio: 1;
+  height: 34px;
 }
 
 @media screen and (max-width: 767px) {
@@ -250,7 +255,7 @@ body:has(.nav.show-mobile) {
     flex-direction: column;
   }
 
-  .landing .skills h2 {
+  .landing .skills h2 .wrapper{
     border-right: 0;
     padding-right: 0;
     margin-right: 0;
@@ -423,11 +428,11 @@ body:has(.nav.show-mobile) {
     gap: 10px;
   }
 
-  .project .links a:first-child .icon{
+  .project .links a:first-child .icon {
     font-size: 21px;
   }
 
-  .project .links a:last-child .icon{
+  .project .links a:last-child .icon {
     font-size: 18px;
   }
 }
@@ -566,33 +571,33 @@ footer .container .icon:hover {
   }
 }
 
-/* hidden-right {
- opacity: 0;
- filter: blur(5px);
- transition: opacity 1s, filter 1s, transform 1s;
- transform: translateX(100%);
- position: relative;
- z-index: 0;
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 1s, filter 1s, transform 1s;
+  transform: translateX(100%);
+  position: relative;
+  z-index: 0;
+}
 
+.hidden-up {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 1s,
+    filter 1s,
+    transform 1s;
+  transform: translateY(-100%);
+}
 
-hidden-up {
- opacity: 0;
- filter: blur(5px);
- transition: opacity 1s,
-   filter 1s,
-   transform 1s;
- transform: translateY(-100%);
-
-
-hidden-left {
- opacity: 0;
- filter: blur(5px);
- transition: opacity 1s,
-   filter 1s,
-   transform 1s;
- transform: translateX(-100%);
- z-index: 0;
- */
+.hidden-left {
+  opacity: 0;
+  filter: blur(5px);
+  transition: opacity 1s,
+    filter 1s,
+    transform 1s;
+  transform: translateX(-100%);
+  z-index: 0;
+}
 
 .show {
   opacity: 1;

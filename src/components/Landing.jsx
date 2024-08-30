@@ -11,18 +11,34 @@ export default function Landing() {
     <section className="landing">
       <div className="container">
         <div className="info">
-          <h1 className="hidden-left">Hi there, I&apos;m Omar</h1>
-          <p className="hidden-left">
+          <h1 className="hidden-left" style={{ transitionDuration: "1.3s" }}>
+            Hi there, I&apos;m Omar
+          </h1>
+          <p className="hidden-left" style={{ transitionDuration: "1.5s" }}>
             A Junior Front-end web developer based in Al Sharqia, Egypt.
           </p>
         </div>
         <div className="skills">
-          <h2 className="hidden-left">skills</h2>
+          <h2 className="hidden-left" style={{ transitionDelay: ".6s" }}>
+            <div className="wrapper">skills</div>
+          </h2>
           <ul>
-            {skills.map((e) => {
+            {skills.map((e, i) => {
               return (
-                <li key={e}>
-                  <img src={e} alt="" />
+                <li
+                  className="hidden-left"
+                  key={e}
+                  style={{ transitionDelay: `${0.8 + 0.2 * i}s` }}
+                >
+                  <div className="wrapper">
+                    <img
+                      src={e}
+                      alt={e.substring(
+                        e.lastIndexOf("/") + 1,
+                        e.lastIndexOf(".")
+                      )}
+                    />
+                  </div>
                 </li>
               );
             })}
