@@ -76,7 +76,8 @@ header .container>svg {
   display: none;
 }
 
-header h1 {
+header h1 .wrapper {
+  color: var(--Text-Color);
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
 }

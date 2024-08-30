@@ -12,10 +12,12 @@ export default function Landing() {
       <div className="container">
         <div className="info">
           <h1 className="hidden-left" style={{ transitionDuration: "1.3s" }}>
-            Hi there, I&apos;m Omar
+            <div className="wrapper">Hi there, I&apos;m Omar</div>
           </h1>
           <p className="hidden-left" style={{ transitionDuration: "1.5s" }}>
-            A Junior Front-end web developer based in Al Sharqia, Egypt.
+            <div className="wrapper">
+              A Junior Front-end web developer based in Al Sharqia, Egypt.
+            </div>
           </p>
         </div>
         <div className="skills">
