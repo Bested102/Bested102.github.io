@@ -191,11 +191,13 @@ body:has(.nav.show-mobile) {
 .landing h1 .wrapper{
   font-size: 65px;
   font-weight: bolder;
+  color: var(--Text-Color);
 }
 
 .landing p .wrapper{
   font-size: 19px;
   margin-block: 10px;
+  color: var(--Text-Color);
 }
 
 .landing .skills {
