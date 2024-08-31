@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
-  transition: background .35s, color .35s;
 }
 
 body {
@@ -76,8 +75,7 @@ header .container>svg {
   display: none;
 }
 
-header h1 .wrapper {
-  color: var(--Text-Color);
+header h1{
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
 }
@@ -188,16 +186,14 @@ body:has(.nav.show-mobile) {
   gap: 90px;
 }
 
-.landing h1 .wrapper{
+.landing h1{
   font-size: 65px;
   font-weight: bolder;
-  color: var(--Text-Color);
 }
 
-.landing p .wrapper{
+.landing p{
   font-size: 19px;
   margin-block: 10px;
-  color: var(--Text-Color);
 }
 
 .landing .skills {
@@ -212,6 +208,7 @@ body:has(.nav.show-mobile) {
   padding-right: 15px;
   margin-right: 25px;
   font-size: 26px;
+  transition: background .35s, color .35s;
 }
 
 .landing .skills ul {
@@ -230,6 +227,7 @@ body:has(.nav.show-mobile) {
   height: 60px;
   border-radius: 50%;
   cursor: pointer;
+  transition: background .35s, color .35s;
   user-select: none;
 }
 
@@ -247,7 +245,7 @@ body:has(.nav.show-mobile) {
     text-align: center;
   }
 
-  .landing h1 .wrapper{
+  .landing h1{
     font-size: 60px;
   }
 
