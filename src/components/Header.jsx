@@ -3,6 +3,7 @@ import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   let x = window.matchMedia("(max-width: 767px)");
+  const header = useRef(0);
   const nav = useRef(0);
 
   useEffect(() => {
@@ -14,8 +15,11 @@ export default function Header() {
         menuItem.forEach((e) => (e.onclick = closeMobile));
         document.querySelector(".nav svg").onclick = closeMobile;
         document.body.addEventListener("click", (e) => {
-          if (e.target === document.body && nav.current.classList.contains("show-mobile")){
-            closeMobile()
+          if (
+            e.target === document.body &&
+            nav.current.classList.contains("show-mobile")
+          ) {
+            closeMobile();
           }
         });
       } else {
@@ -28,6 +32,8 @@ export default function Header() {
     }
     myFunction(x);
     x.addEventListener("change", myFunction);
+    toggleSticky();
+    window.addEventListener("scroll", toggleSticky);
   }, [x]);
 
   function showMobile() {
@@ -40,14 +46,22 @@ export default function Header() {
     nav.current.classList.add("hide-mobile");
   }
 
+  function toggleSticky() {
+    header.current.classList.toggle(
+      "sticky",
+      window.scrollY > header.current.offsetHeight / 2
+    );
+  }
+
   return (
-    <header id="home" className="hidden-up">
-      <div className="container">
+    <header ref={header}>
+      <div className="container hidden-up">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="1.3em"
           viewBox="0 0 512 512"
           onClick={showMobile}
+          className="theme-change"
         >
           <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
         </svg>

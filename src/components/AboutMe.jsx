@@ -1,10 +1,10 @@
 
 export default function AboutMe() {
-  return (<section className="about" id="about">
+  return (<section className="about theme-change" id="about">
   <div className="container">
     <img src="/images/cat.jpg" className="hidden-left" alt="personal photo"/>
     <div className="content hidden-right">
-      <h3>About Me</h3>
+      <h3 className="theme-change">About Me</h3>
       <p>
         Hello, I&apos;m Omar. I&apos;m a front-end developer with a strong
         foundation in HTML, CSS, and JavaScript. Since I began learning to

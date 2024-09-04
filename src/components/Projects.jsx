@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section className="projects" id="projects">
       <div className="container">
-        <h1>Projects</h1>
+        <h1 className="theme-change">Projects</h1>
         {data.map((p, i) => (
           <ProjectBox key={p.title} project={p} index={i}/>
         ))}

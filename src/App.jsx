@@ -27,7 +27,24 @@ export default function App() {
 
     setTimeout(() => {
       document.body.style.transition = "background .35s, color .35s";
-    }, 100);
+      const colorVar = getComputedStyle(document.body).getPropertyValue(
+        "--Text-Color"
+      );
+      document.querySelectorAll("body .theme-change").forEach((e) => {
+        const styles = getComputedStyle(e);
+        let addedTrans = "";
+        if (styles.color != colorVar) {
+          addedTrans += ",color .35s";
+        }
+        if (styles.background != "none") {
+          addedTrans += ",background .35s";
+        }
+        if (styles.boxShadow != "none") {
+          addedTrans += ",box-shadow .35s";
+        }
+        e.style.transition = styles.transition + addedTrans;
+      });
+    }, 200);
   }, []);
   return (
     <>

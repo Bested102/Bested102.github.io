@@ -17,14 +17,14 @@ export default function ProjectBox({ project, index }) {
   }, [index]);
 
   return (
-    <div className="project" ref={parentEl}>
+    <div className="project theme-change" ref={parentEl}>
       <img src={project.imgSrc} ref={imgEl} className="hidden-left" />
       <div className="info hidden-right" ref={infoEl}>
-        <h2>{project.title}</h2>
+        <h2 className="theme-change">{project.title}</h2>
         <p>{project.description}</p>
         <div className="techs">
           {project.techs.map((t) => (
-            <span key={t}>{t}</span>
+            <span className="theme-change" key={t}>{t}</span>
           ))}
         </div>
         <div className="links">

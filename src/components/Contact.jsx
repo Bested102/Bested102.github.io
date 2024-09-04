@@ -11,21 +11,21 @@ export default function Contact() {
     }
   };
   return (
-    <section className="contact" id="contact">
+    <section className="contact theme-change" id="contact">
       <div className="container">
-        <h1>Contact</h1>
+        <h1 className="theme-change">Contact</h1>
         <div className="content">
           <div
             className="box hidden-left"
             onClick={()=> copyContent("omar101.business@gmail.com")}
             title="Copy to clipboard"
           >
-            <div className="circle">
+            <div className="circle theme-change">
               <FontAwesomeIcon icon={faEnvelope} className="icon"/>
             </div>
             <div className="info">
               <h3>Mail</h3>
-              <p>omar101.business@gmail.com</p>
+              <p className="theme-change">omar101.business@gmail.com</p>
             </div>
           </div>
           <div
@@ -39,7 +39,7 @@ export default function Contact() {
             </div>
             <div className="info">
               <h3>Discord</h3>
-              <p>&quot;bested.&quot;</p>
+              <p className="theme-change">&quot;bested.&quot;</p>
             </div>
           </div>
         </div>
