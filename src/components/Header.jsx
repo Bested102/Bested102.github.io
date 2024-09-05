@@ -13,7 +13,13 @@ export default function Header() {
       if (x.matches) {
         document.body.prepend(nav.current);
         nav.current.classList.add("hide-mobile");
-        menuItem.forEach((e) => (e.onclick = closeMobile));
+        menuItem.forEach(
+          (e, i) =>
+            (e.onclick = () => {
+              closeMobile();
+              scroll(sections[i]);
+            })
+        );
         document.querySelector(".nav svg").onclick = closeMobile;
         document.body.addEventListener("click", (e) => {
           if (
@@ -35,6 +41,7 @@ export default function Header() {
     x.addEventListener("change", myFunction);
     toggleSticky();
     window.addEventListener("scroll", toggleSticky);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [x]);
 
   function showMobile() {
@@ -52,6 +59,11 @@ export default function Header() {
       "sticky",
       window.scrollY > header.current.offsetHeight / 2
     );
+  }
+
+  function scroll(e) {
+    var scrollDiv = document.getElementById(e).offsetTop - 65;
+    window.scrollTo({ top: scrollDiv, behavior: "smooth" });
   }
 
   return (
@@ -78,12 +90,7 @@ export default function Header() {
           {sections.map((e) => {
             return (
               <li key={e}>
-                <a
-                  onClick={() => {
-                    var scrollDiv = document.getElementById(e).offsetTop - 65;
-                    window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-                  }}
-                >
+                <a onClick={() => scroll(e)}>
                   {e.charAt(0).toUpperCase() + e.slice(1)}
                 </a>
               </li>

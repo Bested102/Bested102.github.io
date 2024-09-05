@@ -148,6 +148,7 @@ body>.nav {
 }
 
 body>.nav li {
+  cursor: pointer;
   margin-top: 25px;
 }
 
