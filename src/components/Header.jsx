@@ -5,6 +5,7 @@ export default function Header() {
   let x = window.matchMedia("(max-width: 767px)");
   const header = useRef(0);
   const nav = useRef(0);
+  const sections = ["home", "about", "projects", "contact"];
 
   useEffect(() => {
     function myFunction(x) {
@@ -74,18 +75,20 @@ export default function Header() {
           >
             <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
           </svg>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          {sections.map((e) => {
+            return (
+              <li key={e}>
+                <a
+                  onClick={() => {
+                    var scrollDiv = document.getElementById(e).offsetTop - 65;
+                    window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+                  }}
+                >
+                  {e.charAt(0).toUpperCase() + e.slice(1)}
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <ThemeToggle />
       </div>

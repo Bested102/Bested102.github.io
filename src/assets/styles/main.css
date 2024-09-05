@@ -61,7 +61,7 @@ section {
 header {
   position: fixed;
   width: 100%;
-  transition: background .35s, box-shadow .35s;
+  transition: background .35s, box-shadow .35s, height .35s;
   left: 0;
   top: 0;
   z-index: 98;
@@ -116,7 +116,7 @@ header .container ul svg {
 
 header .container ul li {
   cursor: pointer;
-  transition:opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 header .container ul li:hover {
