@@ -1,5 +1,13 @@
 [
   {
+    "title": "Ranking Calculator",
+    "techs": ["React"],
+    "description": "A tool to rank between items through pairwise comparsions",
+    "imgSrc":"/images/rankCalc.jpg",
+    "code": "https://github.com/Bested102/rankCalc/",
+    "site": "https://bested102.github.io/rankCalc/"
+  },
+  {
     "title": "Schmidt",
     "techs": ["Vue", "SCSS"],
     "description": "A template copy from Colorlib. Multiple page portfolio website.",
