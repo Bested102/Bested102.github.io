@@ -5,9 +5,10 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./assets/styles/main.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

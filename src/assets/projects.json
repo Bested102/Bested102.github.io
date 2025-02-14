@@ -2,7 +2,7 @@
   {
     "title": "Ranking Calculator",
     "techs": ["React"],
-    "description": "A tool to rank between items through pairwise comparsions",
+    "description": "A tool to rank items through pairwise comparisons using user input.",
     "imgSrc":"/images/rankCalc.jpg",
     "code": "https://github.com/Bested102/rankCalc/",
     "site": "https://bested102.github.io/rankCalc/"
